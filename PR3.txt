@@ -1,0 +1,39 @@
+#include <iostream>
+#include <cstring>
+using namespace std;
+
+class book {
+private:
+	string Name;
+	string aName;
+	int Pages;
+public:
+	void BookName() {
+		cout << "Book's name: " << endl;
+		cin >> Name;
+	}
+  
+	void AuthorName() {
+		cout << "Author? " << endl;
+		cin >> aName;
+	}
+  
+	void PagesAmount() {
+		cout << "Enter amount of pages: " << endl;
+		cin >> Pages;
+	}
+  
+	void BookInfo() {
+		cout << "The book called " << Name << "  by " << aName << " with amount of " << Pages << " pages" << endl;
+	}
+  
+};
+
+int main() {
+	book kniga;
+	kniga.BookName();
+	kniga.AuthorName();
+	kniga.PagesAmount();
+	kniga.BookInfo();
+	return 0;
+}
